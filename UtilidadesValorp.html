@@ -1,0 +1,80 @@
+<html lang="en">
+<CENTER>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    *{
+      margin: 0;
+      padding:0;
+    } 
+    body{
+      background: #BCAAA6;
+     }
+    </style>
+  </br>
+  </br>
+  </br>
+  </br>
+  <h1>CALCULAR VALOR DEL PRODUCTO </h1>
+   </br>
+   <script>
+    function Calcular(){
+      var e = document.ut.a.value;
+      var p = document.ut.b.value;
+      var t = document.ut.c.value;
+      var r = document.ut.x.value;
+      var z = document.ut.s.value;
+      r = (parseFloat(e)* (parseFloat(p)+parseFloat(t)) /100 + parseFloat(e));
+      document.ut.x.value =r;
+      z = (parseFloat(e)* parseFloat(p) /100);
+      document.ut.s.value =z;
+    }
+   </script>
+<form id="formulario" name ="ut" action="utilidadesValorp.html" methond= "POST">
+  </br>
+  <div class="row mb-3">
+    <label for="inputText" class="col-sm-2 col-form-label" >Valor de la compra</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="a" placeholder ="Digite una cantidad" style="text-align: center;">
+    </div>
+  </div>
+  </br>
+  <div class="row mb-3">
+    <label for="inputText" class="col-sm-2 col-form-label">Porcentaje de utilidad </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="b" placeholder = "Digite un %" style="text-align: center;">
+    </div>
+  </div>
+  </br>
+  <div class="row mb-3">
+    <label for="inputText" class="col-sm-2 col-form-label">Porcentaje de impuestos </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="c" placeholder = "Digite un %" style="text-align: center;">
+    </div>
+  </div>
+  </br>
+  <div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" type="button" onclick= "Calcular();" style="background-color: #1D5CA7" >CALCULAR</button>
+</div>
+ </br>
+ <div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" type="button" onclick = "reset();" style="background-color: #1D5CA7" >BORRAR</button>
+</div>
+</br>
+  <div class="row mb-3">
+    <label for="inputText" class="col-sm-2 col-form-label">Valor de venta </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="x" name="x" placeholder="Resultado" style = "background-color:#B2B794">
+    </div>
+  </div>
+  </br>
+  <div class="row mb-3">
+    <label for="inputText" class="col-sm-2 col-form-label">Ganancia </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="s" name="s" placeholder="Resultado" style = "background-color:#B2B794">
+    </div>
+  </div>
+  </br>
+   </br>
+</form>
+</CENTER>>
